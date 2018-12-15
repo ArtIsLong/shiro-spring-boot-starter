@@ -1,0 +1,33 @@
+{
+  "groups": [
+    {
+      "name": "security.shiro",
+      "type": "com.example.config.shiro.ShiroProperties",
+      "sourceType": "com.example.config.shiro.ShiroProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.shiro.loginUrl",
+      "type": "java.lang.String",
+      "description": "登录路径",
+      "sourceType": "com.example.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.noAccessUrl",
+      "type": "java.lang.String",
+      "description": "鉴权失败跳转路径",
+      "sourceType": "com.example.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.filter",
+      "type": "java.util.Map<java.lang.String, java.util.List<java.lang.String>>",
+      "description": "请求过滤路径",
+      "sourceType": "com.example.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.globalSessionTimeout",
+      "type": "java.lang.Long",
+      "description": "ShiroSession超时时间(分钟)",
+      "sourceType": "com.example.config.shiro.ShiroProperties"
+    }
+  ],
+  "hints": []
+}
