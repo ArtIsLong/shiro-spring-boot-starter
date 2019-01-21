@@ -2,31 +2,65 @@
   "groups": [
     {
       "name": "security.shiro",
-      "type": "com.example.config.shiro.ShiroProperties",
-      "sourceType": "com.example.config.shiro.ShiroProperties"
+      "type": "com.github.shiro.config.shiro.ShiroProperties",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.shiroFilter",
+      "type": "com.github.shiro.config.shiro.ShiroProperties$ShiroFilter",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
     }
   ],
   "properties": [
     {
+      "name": "security.shiro.annotationEnabled",
+      "type": "java.lang.String",
+      "description": "是否开启shiro注解支持",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
       "name": "security.shiro.loginUrl",
       "type": "java.lang.String",
       "description": "登录路径",
-      "sourceType": "com.example.config.shiro.ShiroProperties"
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
     },{
       "name": "security.shiro.noAccessUrl",
       "type": "java.lang.String",
-      "description": "鉴权失败跳转路径",
-      "sourceType": "com.example.config.shiro.ShiroProperties"
+      "description": "鉴权失败跳转路径(已弃用)",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
     },{
-      "name": "security.shiro.filter",
+      "name": "security.shiro.filterPattern",
       "type": "java.util.Map<java.lang.String, java.util.List<java.lang.String>>",
       "description": "请求过滤路径",
-      "sourceType": "com.example.config.shiro.ShiroProperties"
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
     },{
       "name": "security.shiro.globalSessionTimeout",
       "type": "java.lang.Long",
       "description": "ShiroSession超时时间(分钟)",
-      "sourceType": "com.example.config.shiro.ShiroProperties"
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.defaultUserName",
+      "type": "java.lang.String",
+      "description": "默认用户名",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.defaultPassword",
+      "type": "java.lang.String",
+      "description": "默认密码",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.shiroFilter",
+      "type": "com.github.shiro.config.shiro.ShiroProperties$ShiroFilter",
+      "description": "自定义Filter",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties"
+    },{
+      "name": "security.shiro.shiroFilter.filters",
+      "type": "java.util.Map<java.lang.String, java.lang.Class<javax.servlet.Filter>>",
+      "description": "filter集合",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties$ShiroFilter"
+    },{
+      "name": "security.shiro.shiroFilter.attributes",
+      "type": "java.util.Map<java.lang.String, java.util.Map<java.lang.String, java.lang.String>>",
+      "description": "filter属性集合",
+      "sourceType": "com.github.shiro.config.shiro.ShiroProperties$ShiroFilter"
     }
   ],
   "hints": []
