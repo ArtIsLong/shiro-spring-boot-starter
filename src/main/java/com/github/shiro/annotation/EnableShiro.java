@@ -1,0 +1,1 @@
+package com.github.shiro.annotation;import com.github.shiro.config.ShiroAutoConfiguration;import org.springframework.context.annotation.Import;import java.lang.annotation.*;/** * 开启Shiro自动配置 */@Documented@Target(ElementType.TYPE)@Retention(RetentionPolicy.RUNTIME)@Import({ShiroAutoConfiguration.class})public @interface EnableShiro {}

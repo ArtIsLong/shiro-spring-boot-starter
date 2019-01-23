@@ -18,3 +18,24 @@
 
 # 如何使用
 
+- 添加依赖
+
+  pom.xml
+
+  ~~~xml
+  <dependency>
+      <groupId>com.github.shiro</groupId>
+      <artifactId>shiro-spring-boot-starter</artifactId>
+      <version>1.0</version>
+  </dependency>
+  ~~~
+
+  build.gradle
+
+  ~~~groovy
+  compile 'com.github.shiro:shiro-spring-boot-starter:1.0'
+  ~~~
+
+- 开启自动配置
+
+  在配置类中使用@EnableShiro注解开启Shiro
