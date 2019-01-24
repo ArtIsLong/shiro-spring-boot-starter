@@ -37,6 +37,11 @@
       "description": "是否开启shiro注解支持",
       "sourceType": "com.github.shiro.config.ShiroProperties"
     },{
+      "name": "security.shiro.test",
+      "type": "java.lang.Boolean",
+      "description": "是否开启Shiro默认测试接口",
+      "sourceType": "com.github.shiro.config.ShiroProperties"
+    },{
       "name": "security.shiro.loginUrl",
       "type": "java.lang.String",
       "description": "登录路径",
@@ -67,6 +72,26 @@
       "description": "ShiroSession超时时间(分钟)",
       "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
     },{
+      "name": "security.shiro.session.deleteInvalidSessions",
+      "type": "java.lang.Boolean",
+      "description": "是否删除过期Session",
+      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+    },{
+      "name": "security.shiro.session.sessionValidationSchedulerEnabled",
+      "type": "java.lang.Boolean",
+      "description": "是否定时检查Session",
+      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+    },{
+      "name": "security.shiro.session.sessionIdCookieEnabled",
+      "type": "java.lang.Boolean",
+      "description": "session是否可以被保存到cookie中",
+      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+    },{
+      "name": "security.shiro.session.sessionIdUrlRewritingEnabled",
+      "type": "java.lang.Boolean",
+      "description": "是否去掉URL中的JSESSIONID",
+      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+    },{
       "name": "security.shiro.defaultUserName",
       "type": "java.lang.String",
       "description": "默认用户名",
@@ -94,7 +119,7 @@
     },{
       "name": "security.shiro.redis.enabled",
       "type": "java.lang.Boolean",
-      "description": "",
+      "description": "是否开启Redis单独配置",
       "sourceType": "com.github.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.host",
@@ -181,6 +206,11 @@
       "type": "java.lang.String",
       "description": "",
       "sourceType": "com.github.shiro.config.ShiroRedisProperties$Sentinel"
+    },{
+      "sourceType": "com.spring4all.swagger.SwaggerProperties",
+      "name": "swagger.docket.shiroDocket",
+      "description": "覆盖Shiro默认的测试接口配置(只有在security.shiro.test=true时生效)",
+      "type": "com.spring4all.swagger.SwaggerProperties$DocketInfo"
     }
   ],
   "hints": []
