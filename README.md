@@ -107,7 +107,7 @@ security:
 
   通过attributes可配置自定义的Filter的属性值，目前只限于`java.lang.String`类型的属性配置。
 
-**注：**由于此工具修改了默认的authc过滤器，需要配置未登录时跳转URL(noAccessUrl)
+**注：** 由于此工具修改了默认的authc过滤器，需要配置未登录时跳转URL(noAccessUrl)
 
 ### 过滤规则配置
 
