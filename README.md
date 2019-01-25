@@ -45,7 +45,7 @@ pom.xml
 
 ~~~xml
 <dependency>
-    <groupId>com.github.shiro</groupId>
+    <groupId>info.chenmin.shiro</groupId>
     <artifactId>shiro-spring-boot-starter</artifactId>
     <version>1.0</version>
 </dependency>
@@ -54,7 +54,7 @@ pom.xml
 build.gradle
 
 ~~~groovy
-compile 'com.github.shiro:shiro-spring-boot-starter:1.0'
+compile 'info.chenmin.shiro:shiro-spring-boot-starter:1.0'
 ~~~
 
 ## 开启自动配置
@@ -91,7 +91,7 @@ security:
   shiro:
     shiroFilter:
       filters:
-        authc: com.github.shiro.shiro.SelfDefinedFormAuthenticationFilter
+        authc: info.chenmin.shiro.shiro.SelfDefinedFormAuthenticationFilter
       attributes:
         authc:
           noAccessUrl: /default/noLogin   # 未登录时跳转URL
@@ -206,7 +206,7 @@ swagger:
   license: Apache License, Version 2.0
   license-url: https://www.apache.org/licenses/LICENSE-2.0.html
   terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
-  base-package: com.github.shiro.test
+  base-package: info.chenmin.shiro.test
   base-path: /**
   exclude-path: /error, /ops/**
   docket:
@@ -217,7 +217,7 @@ swagger:
       license: Apache License, Version 2.0
       license-url: https://www.apache.org/licenses/LICENSE-2.0.html
       terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
-      base-package: com.github.shiro.web
+      base-package: info.chenmin.shiro.web
       base-path: /**
       exclude-path: /error, /ops/**
 ~~~

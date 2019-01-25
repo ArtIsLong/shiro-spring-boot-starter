@@ -2,32 +2,32 @@
   "groups": [
     {
       "name": "security.shiro",
-      "type": "com.github.shiro.config.ShiroProperties",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "type": "info.chenmin.shiro.config.ShiroProperties",
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.shiroFilter",
-      "type": "com.github.shiro.config.ShiroProperties$ShiroFilter",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "type": "info.chenmin.shiro.config.ShiroProperties$ShiroFilter",
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.redis",
-      "type": "com.github.shiro.config.ShiroRedisProperties",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties",
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.session",
-      "type": "com.github.shiro.config.ShiroProperties$ShiroSession",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "type": "info.chenmin.shiro.config.ShiroProperties$ShiroSession",
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.pool",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Pool",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Pool",
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.cluster",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Cluster",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Cluster",
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.sentinel",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Sentinel",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Sentinel",
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     }
   ],
   "properties": [
@@ -35,177 +35,177 @@
       "name": "security.shiro.annotationEnabled",
       "type": "java.lang.String",
       "description": "是否开启shiro注解支持",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.test",
       "type": "java.lang.Boolean",
       "description": "是否开启Shiro默认测试接口",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.loginUrl",
       "type": "java.lang.String",
       "description": "登录路径",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.successUrl",
       "type": "java.lang.String",
       "description": "登录成功路径",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.unauthorizedUrl",
       "type": "java.lang.String",
       "description": "未经授权路径",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.noAccessUrl",
       "type": "java.lang.String",
       "description": "鉴权失败跳转路径(已弃用)",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.filterPattern",
-      "type": "java.util.Map<com.github.shiro.util.DefaultFilterType, java.util.List<java.lang.String>>",
+      "type": "java.util.Map<info.chenmin.shiro.util.DefaultFilterType, java.util.List<java.lang.String>>",
       "description": "请求过滤路径",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.session.globalSessionTimeout",
       "type": "java.lang.Long",
       "description": "ShiroSession超时时间(分钟)",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroSession"
     },{
       "name": "security.shiro.session.deleteInvalidSessions",
       "type": "java.lang.Boolean",
       "description": "是否删除过期Session",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroSession"
     },{
       "name": "security.shiro.session.sessionValidationSchedulerEnabled",
       "type": "java.lang.Boolean",
       "description": "是否定时检查Session",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroSession"
     },{
       "name": "security.shiro.session.sessionIdCookieEnabled",
       "type": "java.lang.Boolean",
       "description": "session是否可以被保存到cookie中",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroSession"
     },{
       "name": "security.shiro.session.sessionIdUrlRewritingEnabled",
       "type": "java.lang.Boolean",
       "description": "是否去掉URL中的JSESSIONID",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroSession"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroSession"
     },{
       "name": "security.shiro.defaultUserName",
       "type": "java.lang.String",
       "description": "默认用户名",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.defaultPassword",
       "type": "java.lang.String",
       "description": "默认密码",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.shiroFilter",
-      "type": "com.github.shiro.config.ShiroProperties$ShiroFilter",
+      "type": "info.chenmin.shiro.config.ShiroProperties$ShiroFilter",
       "description": "自定义Filter",
-      "sourceType": "com.github.shiro.config.ShiroProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties"
     },{
       "name": "security.shiro.shiroFilter.filters",
-      "type": "java.util.Map<com.github.shiro.util.DefaultFilterType, java.lang.Class<javax.servlet.Filter>>",
+      "type": "java.util.Map<info.chenmin.shiro.util.DefaultFilterType, java.lang.Class<javax.servlet.Filter>>",
       "description": "filter集合",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroFilter"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroFilter"
     },{
       "name": "security.shiro.shiroFilter.attributes",
-      "type": "java.util.Map<com.github.shiro.util.DefaultFilterType, java.util.Map<java.lang.String, java.lang.String>>",
+      "type": "java.util.Map<info.chenmin.shiro.util.DefaultFilterType, java.util.Map<java.lang.String, java.lang.String>>",
       "description": "filter属性集合",
-      "sourceType": "com.github.shiro.config.ShiroProperties$ShiroFilter"
+      "sourceType": "info.chenmin.shiro.config.ShiroProperties$ShiroFilter"
     },{
       "name": "security.shiro.redis.enabled",
       "type": "java.lang.Boolean",
       "description": "是否开启Redis单独配置",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.host",
       "type": "java.lang.String",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.port",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.timeout",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.soTimeout",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.maxAttempts",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.password",
       "type": "java.lang.String",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.database",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.pool",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Pool",
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Pool",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.cluster",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Cluster",
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Cluster",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.sentinel",
-      "type": "com.github.shiro.config.ShiroRedisProperties$Sentinel",
+      "type": "info.chenmin.shiro.config.ShiroRedisProperties$Sentinel",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties"
     },{
       "name": "security.shiro.redis.pool.maxIdle",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Pool"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Pool"
     },{
       "name": "security.shiro.redis.pool.minIdle",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Pool"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Pool"
     },{
       "name": "security.shiro.redis.pool.maxActive",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Pool"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Pool"
     },{
       "name": "security.shiro.redis.pool.maxWait",
       "type": "java.lang.Integer",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Pool"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Pool"
     },{
       "name": "security.shiro.redis.cluster.nodes",
       "type": "java.util.List<java.lang.String>",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Cluster"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Cluster"
     },{
       "name": "security.shiro.redis.sentinel.master",
       "type": "java.lang.String",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Sentinel"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Sentinel"
     },{
       "name": "security.shiro.redis.sentinel.nodes",
       "type": "java.lang.String",
       "description": "",
-      "sourceType": "com.github.shiro.config.ShiroRedisProperties$Sentinel"
+      "sourceType": "info.chenmin.shiro.config.ShiroRedisProperties$Sentinel"
     },{
       "sourceType": "com.spring4all.swagger.SwaggerProperties",
       "name": "swagger.docket.shiroDocket",
