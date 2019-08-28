@@ -1,0 +1,1 @@
+# Auto Configureorg.springframework.boot.autoconfigure.EnableAutoConfiguration=\com.github.artislong.config.ShiroAutoConfiguration,\com.github.artislong.config.ShiroRedisAutoConfiguration,\com.github.artislong.swagger.SwaggerConfiguration,\com.github.artislong.WebMvcConfiguration
